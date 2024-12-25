@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Welcome-Page</title>
+  </head>
+  <body id="home">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark group d-flex justify-content-between align-items-center"
+    >
+      <div class="container">
+        <a class="navbar-brand text-black smart" href="#">SMART LOGIN</a>
+        <button
+          class="navbar-toggler bg-black"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item btn btn-dark">
+              <a class="nav-link text-white" href="/" onclick="logout()"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5 text-center h-100 d-flex align-items-center">
+      <div class="group1 m-auto w-75 p-5">
+        <h1 id="username"></h1>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

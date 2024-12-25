@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Login-Page</title>
+  </head>
+  <body>
+    <h2 style="color: #ff4260">Sign in/up Form</h2>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input
+            id="signupName"
+            class="form-control my-3"
+            placeholder="Enter your name"
+            type="text"
+          />
+          <input
+            id="signupEmail"
+            class="form-control my-3"
+            placeholder="Enter your email"
+            type="email"
+          />
+
+          <input
+            id="signupPassword"
+            class="form-control my-3"
+            placeholder="Enter  password"
+            type="password"
+          />
+          <p id="exist"></p>
+          <button onclick="signUp()">Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form >
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input
+            id="signinEmail"
+            class="form-control my-3"
+            placeholder="Enter your email"
+            type="text"
+          />
+          <input
+            id="signinPassword"
+            class="form-control my-3"
+            placeholder="Enter your password"
+            type="password"
+          />
+          <p id="incorrect"></p>
+          <a href="#">Forgot your password?</a>
+          <button class="btn btn-danger text-white" onclick="login(event)" >
+            Sign In
+          </button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p style="display: inline-block">Created by</p>
+      <h3 style="color: #ff4260; display: inline-block">Fawzy Serag</h3>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
